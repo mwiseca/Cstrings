@@ -221,3 +221,6 @@ Check skv in choices.
 Added: A feature to map keys to  values in skv in Cstrings.c only. 
 Check mkv in choices.
 October 4 2026.
+The Value in changeVar now has a 4 Character minimum for Cstrings.c CstringsArrays and CstringsIf.
+Check cv in choices.
+October 11 2026.
