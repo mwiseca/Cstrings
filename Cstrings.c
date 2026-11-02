@@ -1063,7 +1063,7 @@ void binHex() {
     }
 }
 
-void binHexpf() {
+void binHexPf() {
     char key [59] [100];
     sprintf(key[0],    "A");
     sprintf(key[1],    "B");
