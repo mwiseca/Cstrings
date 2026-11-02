@@ -60,6 +60,7 @@ void choice() {
     printf("//Enter csl to check scanf and limmit size.\n");
     printf("//Enter cb to clear input buffer\n");
     printf("//Enter bh to convert letters to binary and hexadecimal numbers.\n");
+    printf("//Enter pbh to convert letters to printf strings with binary and hexadecimal numbers.\n");
     printf("//Enter h to allocate memory on the heap.\n");
     printf("//Enter hi to allocate numbers on the heap.\n");
     printf("//Enter cm to check malloc.\n");
@@ -1061,6 +1062,272 @@ void binHex() {
         printf("%s\n",value[number]);
     }
 }
+
+void binHexpf() {
+    char key [59] [100];
+    sprintf(key[0],    "A");
+    sprintf(key[1],    "B");
+    sprintf(key[2],    "C");
+    sprintf(key[3],    "D");
+    sprintf(key[4],    "E");
+    sprintf(key[5],    "F");
+    sprintf(key[6],    "G");
+    sprintf(key[7],    "H");
+    sprintf(key[8],    "I");
+    sprintf(key[9],    "J");
+    sprintf(key[10],   "K");
+    sprintf(key[11],   "L");
+    sprintf(key[12],   "M");
+    sprintf(key[13],   "N");
+    sprintf(key[14],   "O");
+    sprintf(key[15],   "P");
+    sprintf(key[16],   "Q");
+    sprintf(key[17],   "R");
+    sprintf(key[18],   "S");
+    sprintf(key[19],   "T");
+    sprintf(key[20],   "U");
+    sprintf(key[21],   "V");
+    sprintf(key[22],   "W");
+    sprintf(key[23],   "X");
+    sprintf(key[24],   "Y");
+    sprintf(key[25],   "Z");
+    sprintf(key[26],   "a");
+    sprintf(key[27],   "b");
+    sprintf(key[28],   "c");
+    sprintf(key[29],   "d");
+    sprintf(key[30],   "e");
+    sprintf(key[31],   "f");
+    sprintf(key[32],   "g");
+    sprintf(key[33],   "h");
+    sprintf(key[34],   "i");
+    sprintf(key[35],   "j");
+    sprintf(key[36],   "k");
+    sprintf(key[37],   "l");
+    sprintf(key[38],   "m");
+    sprintf(key[39],   "n");
+    sprintf(key[40],   "o");
+    sprintf(key[41],   "p");
+    sprintf(key[42],   "q");
+    sprintf(key[43],   "r");
+    sprintf(key[44],   "s");
+    sprintf(key[45],   "t");
+    sprintf(key[46],   "u");
+    sprintf(key[47],   "v");
+    sprintf(key[48],   "w");
+    sprintf(key[49],   "x");
+    sprintf(key[50],   "y");
+    sprintf(key[51],   "z");
+    sprintf(key[52],   ".");
+    sprintf(key[53], "\\n");
+    sprintf(key[54],  "sp");
+    sprintf(key[55],   ",");
+    sprintf(key[56],   ";");
+    sprintf(key[57],   ":");
+    sprintf(key[58],   "!");
+
+    char value [59] [100];
+    sprintf(value[0],  "0b01000001");
+    sprintf(value[1],  "0b01000010");
+    sprintf(value[2],  "0b01000011");
+    sprintf(value[3],  "0b01000100"); 
+    sprintf(value[4],  "0b01000101");
+    sprintf(value[5],  "0b01000110");
+    sprintf(value[6],  "0b01000111");
+    sprintf(value[7],  "0b01001000");
+    sprintf(value[8],  "0b01001001");
+    sprintf(value[9],  "0b01001010");
+    sprintf(value[10], "0b01001011");
+    sprintf(value[11], "0b01001100");
+    sprintf(value[12], "0b01001101");
+    sprintf(value[13], "0b01001110");
+    sprintf(value[14], "0b01001111");
+    sprintf(value[15], "0b01010000");
+    sprintf(value[16], "0b01010001");
+    sprintf(value[17], "0b01010010");
+    sprintf(value[18], "0b01010011");
+    sprintf(value[19], "0b01010100");
+    sprintf(value[20], "0b01010101");
+    sprintf(value[21], "0b01010110");
+    sprintf(value[22], "0b01010111");
+    sprintf(value[23], "0b01011000");
+    sprintf(value[24], "0b01011001");
+    sprintf(value[25], "0b01011010");
+    sprintf(value[26], "0b01100001");
+    sprintf(value[27], "0b01100010");
+    sprintf(value[28], "0b01100011");
+    sprintf(value[29], "0b01100100");
+    sprintf(value[30], "0b01100101");
+    sprintf(value[31], "0b01100110");
+    sprintf(value[32], "0b01100111");
+    sprintf(value[33], "0b01101000");
+    sprintf(value[34], "0b01101001");
+    sprintf(value[35], "0b01101010");
+    sprintf(value[36], "0b01101011");
+    sprintf(value[37], "0b01101100");
+    sprintf(value[38], "0b01101101");
+    sprintf(value[39], "0b01101110");
+    sprintf(value[40], "0b01101111");
+    sprintf(value[41], "0b01110000");
+    sprintf(value[42], "0b01110001");
+    sprintf(value[43], "0b01110010");
+    sprintf(value[44], "0b01110011");
+    sprintf(value[45], "0b01110100");
+    sprintf(value[46], "0b01110101");
+    sprintf(value[47], "0b01110110");
+    sprintf(value[48], "0b01110111");
+    sprintf(value[49], "0b01111000");
+    sprintf(value[50], "0b01111001");
+    sprintf(value[51], "0b01111010");
+    sprintf(value[52], "0b00101110");
+    sprintf(value[53], "0b00001010");
+    sprintf(value[54], "0b00100000");
+    sprintf(value[55], "0b00101100");
+    sprintf(value[56], "0b00111011");
+    sprintf(value[57], "0b00111010");
+    sprintf(value[58], "0b00100001");
+
+
+    char hexValue [59] [100];
+    sprintf(hexValue[0],  "0x41");
+    sprintf(hexValue[1],  "0x42");
+    sprintf(hexValue[2],  "0x43");
+    sprintf(hexValue[3],  "0x44"); 
+    sprintf(hexValue[4],  "0x45");
+    sprintf(hexValue[5],  "0x46");
+    sprintf(hexValue[6],  "0x47");
+    sprintf(hexValue[7],  "0x48");
+    sprintf(hexValue[8],  "0x49");
+    sprintf(hexValue[9],  "0x4A");
+    sprintf(hexValue[10], "0x4B");
+    sprintf(hexValue[11], "0x4C");
+    sprintf(hexValue[12], "0x4D");
+    sprintf(hexValue[13], "0x4E");
+    sprintf(hexValue[14], "0x4F");
+    sprintf(hexValue[15], "0x50");
+    sprintf(hexValue[16], "0x51");
+    sprintf(hexValue[17], "0x52");
+    sprintf(hexValue[18], "0x53");
+    sprintf(hexValue[19], "0x54");
+    sprintf(hexValue[20], "0x55");
+    sprintf(hexValue[21], "0x56");
+    sprintf(hexValue[22], "0x57");
+    sprintf(hexValue[23], "0x58");
+    sprintf(hexValue[24], "0x59");
+    sprintf(hexValue[25], "0x5A");
+    sprintf(hexValue[26], "0x61");
+    sprintf(hexValue[27], "0x62");
+    sprintf(hexValue[28], "0x63");
+    sprintf(hexValue[29], "0x64");
+    sprintf(hexValue[30], "0x65");
+    sprintf(hexValue[31], "0x66");
+    sprintf(hexValue[32], "0x67");
+    sprintf(hexValue[33], "0x68");
+    sprintf(hexValue[34], "0x69");
+    sprintf(hexValue[35], "0x6A");
+    sprintf(hexValue[36], "0x6B");
+    sprintf(hexValue[37], "0x6C");
+    sprintf(hexValue[38], "0x6D");
+    sprintf(hexValue[39], "0x6E");
+    sprintf(hexValue[40], "0x6F");
+    sprintf(hexValue[41], "0x70");
+    sprintf(hexValue[42], "0x71");
+    sprintf(hexValue[43], "0x72");
+    sprintf(hexValue[44], "0x73");
+    sprintf(hexValue[45], "0x74");
+    sprintf(hexValue[46], "0x75");
+    sprintf(hexValue[47], "0x76");
+    sprintf(hexValue[48], "0x77");
+    sprintf(hexValue[49], "0x78");
+    sprintf(hexValue[50], "0x79");
+    sprintf(hexValue[51], "0x7A"); 
+    sprintf(hexValue[52], "0x2E");
+    sprintf(hexValue[53], "0x0A");
+    sprintf(hexValue[54], "0x20");
+    sprintf(hexValue[55], "0x2C");
+    sprintf(hexValue[56], "0x3B");
+    sprintf(hexValue[57], "0x3A");
+    sprintf(hexValue[58], "0x21");
+
+    char t [5] [20] = {"printf(\"",",","%c","\"",");"};
+
+    char base[10];
+    char select[10] [150];
+    int count = 0;
+    int counts = 0;
+    while(1) {
+        printf("//Enter b for binary and  h  for hexadecimal mn to exit.\n");
+        while(1) {
+            if(fgets(base,sizeof(base),stdin) == NULL){
+                checkInput();
+                continue;
+            }
+            base[strcspn(base,"\n")]=0;
+            if(strlen(base) >= 9) {
+                clear();
+            }
+            if(strcmp(base,"b")!=0 && strcmp(base,"h")!=0 && strcmp(base,"mn")!=0) {
+                printf("\nEnter b or h only.\n");
+            }else if(strcmp(base,"mn")==0) {
+                return; 
+            } else {
+                break;
+            }
+        }
+        while(count < 10 && counts < 10) {
+            printf("Enter a Character than press # when finished\n");
+            printf("//Enter ii for index mn for main.\n");
+            if(fgets(select[count],sizeof(select[count]),stdin) == NULL) {
+                checkInput();
+                continue;
+            }
+            select[count][strcspn(select[count],"\n")]=0;
+            if(strlen(select[count]) >= 149) {
+                clear();
+            }
+            if(strcmp(select[count],"ii")==0) {
+                keys();
+                continue;
+            } else if(strcmp(select[count],"mn")==0) {
+                return;
+            } else if(strcmp(select[count], "#")==0) {
+                break;
+            }
+            count++;
+            counts++;
+        }  
+        printf("\n%s",t[0]);
+        for(int j = 0; j < counts; j++) {
+            printf("%s",t[2]);
+        }
+        printf("%s%s",t[3],t[1]);     
+        int ii = 0;
+        for( ii = 0; ii < count; ii++) {
+            int index = -1;
+            for(int i = 0; i < 59;i++){ 
+                if(strcmp(select[ii],key[i])==0){
+                    index = i;
+                }
+            } 
+            if(index == -1){
+                printf("[Key Error]"); 
+            }
+            //for( ii = 0; ii < count; ii++) {  //This did not work.
+            if(strcmp(base,"b")==0) { 
+                printf("%s",value[index]);
+            }else if(strcmp(base,"h")==0) { 
+                printf("%s",hexValue[index]);
+            }
+
+            if(ii < count -1) {
+                printf("%s",t[1]);
+            }        
+        } 
+        printf("%s\n\n",t[4]);
+        //memset(select[count], '\0',sizeof(select[count]));
+        count = 0;
+        counts = 0;
+        } 
+    }
 
 void ifStatement() {
     char f[4][15] = {"if(strcmp(", ",", "\"", ")==0) {"};
@@ -3200,7 +3467,8 @@ int main() {
         {"scb",   CheckScanfClear},
         {"sb",         scanfBasic},
         {"cb",         clearBuffC},
-        {"bh",             binHex},   
+        {"bh",             binHex}, 
+        {"pbh",          binHexPf},
         {"i",         ifStatement},
         {"e",              elseIf},
         {"mi",            multiIf},
@@ -3259,7 +3527,7 @@ int main() {
             break;
         } 
         int index = -1;
-        for(int i = 0; i<44;i++) {
+        for(int i = 0; i<45;i++) {
             if(strcmp(sw, m1[i].keys)==0){
                 index = i;
             }
