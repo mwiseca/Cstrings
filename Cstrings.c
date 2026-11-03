@@ -1251,7 +1251,7 @@ void binHexPf() {
     char t [5] [20] = {"printf(\"",",","%c","\"",");"};
 
     char base[10];
-    char select[10] [150];
+    char select[15] [150];
     int count = 0;
     int counts = 0;
     while(1) {
@@ -1273,7 +1273,7 @@ void binHexPf() {
                 break;
             }
         }
-        while(count < 10 && counts < 10) {
+        while(count < 15 && counts < 15) {
             printf("Enter a Character than press # when finished\n");
             printf("//Enter ii for index mn for main.\n");
             if(fgets(select[count],sizeof(select[count]),stdin) == NULL) {
@@ -1310,6 +1310,7 @@ void binHexPf() {
             } 
             if(index == -1){
                 printf("[Key Error]"); 
+                continue;
             }
             //for( ii = 0; ii < count; ii++) {  //This did not work.
             if(strcmp(base,"b")==0) { 
