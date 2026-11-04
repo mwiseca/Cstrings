@@ -225,5 +225,6 @@ The Value in changeVar now has a 4 Character minimum for Cstrings.c CstringsArra
 Check cv in choices.
 October 11 2026.
 Added: A function that converts characters to printf strings with binary or hexadecimal numbers.
+This was added to Cstrings.c only.
 Check pbh in choices.
 November 4 2026.
