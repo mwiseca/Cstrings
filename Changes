@@ -224,3 +224,6 @@ October 4 2026.
 The Value in changeVar now has a 4 Character minimum for Cstrings.c CstringsArrays and CstringsIf.
 Check cv in choices.
 October 11 2026.
+Added: A function that converts characters to printf strings with binary or hexadecimal numbers.
+Check pbh in choices.
+November 4 2026.
